@@ -1,0 +1,807 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+.headerIndex {
+  margin: 0px;
+  padding: 0px;
+}
+.headerIndex :hover.encabezado__logo {
+  transform: scale(1.1, 1.1);
+}
+.headerIndex .encabezado__logo{
+  animation-name: giro;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.headerIndex #titulosGral {
+  font-family: "Monoton", cursive;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+.headerIndex .titulo1 {
+  margin: 0px;
+  text-align: center;
+  background-color: chocolate;
+  border-bottom: 4px solid black;
+  padding: 20px;
+}
+.headerIndex .navegador {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-weight: bold;
+  background-color: chocolate;
+  border-style: solid;
+  border-width: 4px;
+}
+.headerIndex .navegador .navResponsive {
+  background-color: chocolate;
+}
+.headerIndex .navegador .botonNav {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: chocolate;
+}
+.headerIndex .navegador .navbar-brand {
+  margin: 0px;
+}
+.headerIndex .navegador #navbarNav {
+  background-color: chocolate;
+  justify-content: space-around;
+  padding: 0px;
+}
+.headerIndex .navegador .itemsNav {
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+}
+
+@media (max-width: 1600px) {
+  #titulosGral {
+    font-size: 99px;
+  }
+}
+@media (max-width: 880px) {
+  #titulosGral {
+    font-size: 80px;
+  }
+}
+@media (max-width: 480px) {
+  #titulosGral {
+    font-size: 40px;
+  }
+}
+.footer {
+  background-color: white;
+}
+.footer .piePagina {
+  text-align: center;
+  font-weight: 300;
+}
+.footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+.footer .redes .facebook {
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.footer .redes .instagram {
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.footer .redes .twitter {
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+* {
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+hr {
+  border-width: 2px;
+  border-color: black;
+}
+
+main {
+  background-color: chocolate;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.portadaPrincipal {
+  background-image: url("../img/campo3.jpg");
+  background-repeat: no-repeat;
+  height: 900px;
+  background-size: cover;
+  background-position: center center;
+}
+.portadaPrincipal #parrafoEmbebido {
+  color: rgba(255, 255, 255, 0.836);
+  text-align: center;
+  display: contents;
+  align-content: center;
+  font-size: 35px;
+  margin: 0px;
+  padding: 10px;
+}
+.portadaPrincipal #parrafoEmbebido .caja1, .portadaPrincipal #parrafoEmbebido .caja3, .portadaPrincipal #parrafoEmbebido .caja2 {
+  margin: 0px;
+  padding-top: 50px;
+}
+.textos, .descripcionPag {
+  text-align: justify;
+  padding: 40px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+}
+
+#mapaForm {
+  justify-content: space-evenly;
+  padding: 50px;
+}
+#mapaForm #reservas {
+  padding: 10px;
+}
+#divListaReservas{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: reservasYclima;
+}
+
+#divListaReservas #imgClima{
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+    "a"
+    "b";
+  align-items:center;
+  justify-items: center;
+}
+
+#divReservasHechas{
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+    "titulo"
+    "reservasYclima"
+    "boton";
+  padding-bottom: 10px;
+}
+
+li{
+  list-style-type:none
+}
+
+#btn-nuevaReserva{
+
+  grid-area: boton;
+}
+
+#divTitulo{
+  grid-area: titulo;
+}
+
+#tipoClima{
+  grid-area: a;
+}
+#imagen{
+  grid-area: b;
+  max-width: 80px;
+}
+
+#mapaForm .hora {
+  padding-bottom: 10px;
+}
+#mapaForm #mapa {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+#mapaForm #mapa .mapa {
+  width: 100%;
+  height: 92%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.seccionReservas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mainQuienesSomos {
+  background-color: chocolate;
+}
+.mainQuienesSomos .quienesSomos {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/equipo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+  color: black;
+  font-size: 24px;
+}
+.mainQuienesSomos p {
+  padding: 40px;
+  text-align: justify;
+}
+
+.mainAyuda {
+  height: 700px;
+}
+
+.formulario {
+  padding: 30%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.formulario .comentarios {
+  height: 100px;
+  text-align: initial;
+}
+
+.todosLosComplejos {
+  background-color: white;
+  position: center;
+  padding-bottom: 20px;
+  background-color: chocolate;
+  padding: 5%;
+}
+
+.complejosFutbol, .complejosTenis, .complejosBasquet {
+  background-color: white;
+  height: 300px;
+  width: 1100px;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 100px;
+  text-align: center;
+  border: black 4px solid;
+  background-image: url("../img/futbol5.jpg");
+}
+
+.complejosFutbol p, .complejosTenis p, .complejosBasquet p {
+  position: relative;
+  justify-content: center;
+  left: 520px;
+  width: 50%;
+}
+
+.complejosBasquet {
+  background-image: url("../img/canchabasquet.jpeg");
+}
+
+.complejosBasquet p {
+  position: relative;
+  left: 520px;
+  width: 50%;
+}
+
+.complejosTenis {
+  background-image: url("../img/canchatenis.jpeg");
+}
+
+.complejosTenis p {
+  position: relative;
+  left: 520px;
+  width: 50%;
+}
+
+.todosLosDeportes {
+  display: grid;
+  grid-template-areas: "futbol pfutbol" "basquet pbasquet" "tenis ptenis";
+  grid-template-columns: 208px 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.artFutbol, .artTenis, .artBasquet {
+  grid-area: futbol;
+  background-image: url("../img/futbol2.jpg");
+  border: black 4px solid;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+}
+
+.p1, .p3, .p2 {
+  grid-area: pfutbol;
+  background-color: white;
+  border: black 4px solid;
+  min-height: 200px;
+  max-height: 300px;
+  margin: 0px;
+}
+
+.artBasquet {
+  grid-area: basquet;
+  background-image: url("../img/basquet.jpg");
+}
+
+.p2 {
+  grid-area: pbasquet;
+}
+
+.artTenis {
+  grid-area: tenis;
+  background-image: url("../img/tenis.jpg");
+}
+
+.p3 {
+  grid-area: ptenis;
+}
+
+.desafio {
+  display: grid;
+  grid-template-columns: 30% 55%;
+  grid-template-rows: 35% 20% 40%;
+  grid-template-areas: "user1 encuentro1" "user1 postulados1" "user1 info";
+  grid-row-gap: 10px;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 80px;
+  height: 100%;
+}
+
+.user {
+  grid-area: user1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fotoNombreCiudad {
+  background-image: linear-gradient(to top, #795b3e, #f7b53a);
+  display: flex;
+  flex-direction: row;
+  border: black 4px solid;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.valoracion {
+  background-image: linear-gradient(to top, #795b3e, #f7b53a);
+  border: black 4px solid;
+  border-radius: 10px;
+  grid-area: valoracion;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.valoracion h5 {
+  font-size: 24px;
+}
+
+.reseña {
+  background-image: linear-gradient(to top, #795b3e, #f7b53a);
+  border: black 4px solid;
+  border-radius: 10px;
+  grid-area: reseña;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+:hover.fotoUser {
+  transform: scale(1.2, 1.2);
+}
+
+.fotoUser {
+  background-image: url("../img/fotouser.png");
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nombreCiudad {
+  padding-left: 20px;
+}
+
+.nombreUser {
+  text-align: left;
+}
+
+.ciudadUser {
+  text-align: left;
+}
+
+.encuentro {
+  background-image: linear-gradient(to top, #795b3e, #f7b53a);
+  border: black 4px solid;
+  border-radius: 10px;
+  grid-area: encuentro1;
+  text-align: start;
+  padding: 20px;
+}
+
+.postulados {
+  grid-area: postulados1;
+  height: 100%;
+  padding: 10px;
+}
+
+.infoComplejo {
+  background-image: linear-gradient(to top, #795b3e, #f7b53a);
+  border: black 4px solid;
+  border-radius: 10px;
+  grid-area: info;
+  text-align: center;
+  padding: 10px;
+  margin: -10px;
+}
+
+.infoComplejo p {
+  text-align: justify;
+  width: 50%;
+}
+
+.mainDesafios {
+  padding: 10px;
+  height: 100%;
+}
+
+.quieroJugar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.condiciones {
+  text-align: center;
+}
+
+.jugadores {
+  text-align: center;
+}
+
+.infoCancha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+:hover.mapaDesafios {
+  transform: scale(1.1, 1.1);
+}
+
+.mapaDesafios {
+  width: 40%;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate3d(0, 1, 0, 45deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -45deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 45deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nombreUser {
+    font-size: 24px;
+  }
+
+  .nombreCiudad {
+    padding-left: 20px;
+  }
+
+  .valoracion h5 {
+    font-size: 20px;
+  }
+
+  .reseña p {
+    font-size: 16px;
+  }
+
+  .infoComplejo {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+  }
+  .infoComplejo h2 {
+    font-size: 24px;
+  }
+  .infoComplejo p {
+    font-size: 14px;
+  }
+
+  .mapaDesafios {
+    width: 45%;
+    height: 50%;
+    margin: 0px;
+    padding-bottom: 80px;
+  }
+
+  .encuentro {
+    padding: 10px;
+    margin: 0px;
+  }
+  .encuentro .condiciones {
+    font-size: 24px;
+  }
+  .encuentro h5 {
+    font-size: 20px;
+  }
+
+  .postulados .jugadores {
+    font-size: 24px;
+  }
+  .postulados h5 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainQuienesSomos .quienesSomos {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+}
+@media (max-width: 992px) {
+  .encabezado__logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portadaPrincipal #parrafoEmbebido {
+    font-size: 30px;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainQuienesSomos .quienesSomos {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainQuienesSomos .quienesSomos {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainDesafios {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  .nombreUser {
+    font-size: 16px;
+  }
+
+  .nombreCiudad {
+    padding-left: 14px;
+  }
+
+  .ciudadUser {
+    font-size: 16px;
+  }
+
+  .valoracion h5 {
+    font-size: 14px;
+  }
+
+  .infoComplejo {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+  }
+  .infoComplejo h2 {
+    font-size: 16px;
+  }
+
+  .mapaDesafios {
+    width: 45%;
+    height: 50%;
+    margin: 0px;
+    padding-bottom: 80px;
+  }
+
+  .encuentro {
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+  }
+  .encuentro .condiciones {
+    font-size: 16px;
+  }
+  .encuentro h5 {
+    font-size: 14px;
+  }
+
+  .postulados .jugadores {
+    font-size: 16px;
+  }
+  .postulados h5 {
+    font-size: 14px;
+  }
+
+  .infoCancha p {
+    font-size: 12px;
+  }
+
+  .reseña {
+    height: auto;
+  }
+  .reseña p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mapaForm #mapa {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .p1, .p2, .p3 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .formulario {
+    padding: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .desafio {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 10% 10% 20% 20% 20% 20%;
+    grid-template-areas: "user" "valoracion" "reseña" "encuentro" "info" "postulados";
+    grid-row-gap: 10px;
+    align-content: center;
+    height: 100%;
+  }
+
+  .user {
+    grid-area: user;
+  }
+  .user .fotoUser {
+    height: 100%;
+  }
+
+  .valoracion {
+    grid-area: valoracion;
+  }
+  .valoracion h5 {
+    font-size: 12px;
+  }
+
+  .reseña {
+    grid-area: reseña;
+  }
+  .reseña p {
+    font-size: 12px;
+  }
+
+  .encuentro {
+    grid-area: encuentro;
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+  }
+  .encuentro .condiciones {
+    font-size: 14px;
+  }
+  .encuentro h5 {
+    font-size: 12px;
+  }
+
+  .postulados {
+    grid-area: postulados;
+  }
+  .postulados .jugadores {
+    font-size: 14px;
+  }
+  .postulados h5 {
+    font-size: 12px;
+  }
+
+  .infoComplejo {
+    grid-area: info;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    position: relative;
+    margin: 0px;
+    top: 10px;
+  }
+  .infoComplejo h2 {
+    font-size: 14px;
+  }
+  .infoComplejo p {
+    font-size: 12px;
+  }
+
+  .infoCancha p {
+    font-size: 9px;
+  }
+
+  .mapaDesafios {
+    width: 45%;
+    height: 200px;
+    margin: 0px;
+  }
+
+  .ciudadUser {
+    font-size: 16px;
+  }
+
+  .nombreCiudad {
+    padding-left: 14px;
+  }
+  .nombreCiudad .ciudadUser {
+    font-size: 10px;
+  }
+
+  .nombreUser {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formulario {
+    padding: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portadaPrincipal #parrafoEmbebido {
+    font-size: 25px;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .portadaPrincipal #parrafoEmbebido {
+    font-size: 20px;
+    margin: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

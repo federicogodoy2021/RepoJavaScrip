@@ -1,0 +1,27 @@
+//IMPORTANDO VARIABLES
+
+@import "../utilities/variables";
+
+//Propiedas de las etiquetas en general
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+hr{
+    border-width: 2px;
+    border-color: black;
+}
+
+main{
+    background-color: $fondos
+}
+
+body{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}

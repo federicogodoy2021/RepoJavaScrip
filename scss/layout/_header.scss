@@ -1,0 +1,84 @@
+//IMPORTANDO VARIABLES
+
+@import "../utilities/variables";
+
+//Propiedades del HEADER
+
+.headerIndex{        
+    margin: 0px;
+    padding: 0px;
+
+        :hover.encabezado__logo{
+            transform: scale(1.1,1.1);
+}
+        .encabezado__logo{
+
+            animation-name: giro;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+}
+        #titulosGral{
+            font-family: 'Monoton', cursive;
+            text-align: center;
+            text-decoration:none;
+            font-weight: 300;
+}
+        .titulo1{
+            margin: 0px;
+            text-align: $textAlign;
+            background-color: $fondos;
+            border-bottom: 4px solid black;
+            padding: 20px;
+}
+        .navegador{
+            padding:0px;
+            margin: 0px;
+            width: 100%;
+            font-weight: bold;
+            background-color:$fondos;
+            border-style: solid;
+            border-width: 4px;
+
+                .navResponsive{
+                    background-color: $fondos;
+}
+                        .botonNav{
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            background-color: $fondos;
+}
+                        .navbar-brand{
+                            margin: 0px;
+}
+                        #navbarNav{
+                            background-color: $fondos;
+                            justify-content:space-around;
+                            padding: 0px;
+}
+                                .itemsNav{
+    
+                                    justify-content: space-around;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    align-items: center;
+
+}
+}
+}
+
+
+@media (max-width: 1600px){
+    #titulosGral{
+         font-size: 99px;
+}
+} 
+@media (max-width: 880px){
+    #titulosGral{
+        font-size: 80px;
+}
+}
+@media (max-width: 480px){
+    #titulosGral{
+        font-size: 40px;
+}
+}

@@ -1,0 +1,10 @@
+//IMPORTANDO VARIABLES
+
+@import "../utilities/variables";
+
+//Mixin para logos de redes en footer
+@mixin logosRedes($backgroundRep, $altoAnchoredes){
+    background-repeat: $backgroundRep;
+    width: $altoAnchoRedes;
+    height: $altoAnchoRedes;
+}
