@@ -2,6 +2,18 @@ Página
 
 https://federicogodoy2021.github.io/JS-Federico-Godoy---COM-19990-/index.html
 
+https://stadiumrosario.000webhostapp.com/index.html
+
+
 Repositorio
 
 https://github.com/federicogodoy2021/JS-Federico-Godoy---COM-19990-
+
+
+Comentario:
+La consulta a la API funciona correctamente con los archivos en la PC pero no funciona en las paginas hosteadas
+
+Error: 
+jquery-2.2.4.min.js:4 Mixed Content: The page at 'https://stadiumrosario.000webhostapp.com/index.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://api.openweathermap.org/data/2.5/weather?q=Roldan&appid=757a2e3a4a8ba3a6b556b073dfd80963'. This request has been blocked; the content must be served over HTTPS.
+
+Entiendo que es un error de protocolos de seguridad.
